@@ -2,7 +2,7 @@
     "name": "Lab8-Starter",
     "short_name": "Deena Pederson",
     "description": "website with recipes",
-    "start_url": "/",
+    "start_url": "/Lab8-Starter",
     "display": "standalone",
     "background_color": "red",
     "theme_color": "red",
@@ -30,4 +30,3 @@
 
     ]
   }
-  

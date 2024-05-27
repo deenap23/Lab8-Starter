@@ -50,7 +50,7 @@ function initializeServiceWorker() {
     window.addEventListener("load", async () => {
       try {
         const registration = await navigator.serviceWorker.register("./sw.js", {
-          // scope: "/",
+          scope: "/",
         });
         if (registration.installing) {
           console.log("Service worker installing");
@@ -103,7 +103,7 @@ async function getRecipes() {
   //            function (we call these callback functions). That function will
   //            take two parameters - resolve, and reject. These are functions
   //            you can call to either resolve the Promise or Reject it.
-  const promise = new Promise(async(resolve, reject) => {
+  return new Promise(async(resolve, reject) => {
     /**************************/
     // A4-A11 will all be *inside* the callback function we passed to the Promise
     // we're returning
@@ -127,7 +127,7 @@ async function getRecipes() {
         reject(error);
       }
     }
-    return promise;
+    
     // A6. TODO - For each URL in that array, fetch the URL - MDN also has a great
     //            article on fetch(). NOTE: Fetches are ASYNCHRONOUS, meaning that
     //            you must either use "await fetch(...)" or "fetch.then(...)". This

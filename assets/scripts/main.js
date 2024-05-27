@@ -127,7 +127,7 @@ async function getRecipes() {
         reject(error);
       }
     }
-    
+    return promise;
     // A6. TODO - For each URL in that array, fetch the URL - MDN also has a great
     //            article on fetch(). NOTE: Fetches are ASYNCHRONOUS, meaning that
     //            you must either use "await fetch(...)" or "fetch.then(...)". This

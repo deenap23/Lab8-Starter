@@ -2,7 +2,7 @@
     "name": "Lab8-Starter",
     "short_name": "Deena Pederson",
     "description": "website with recipes",
-    "start_url": "http://127.0.0.1:5500/index.html",
+    "start_url": "/",
     "display": "standalone",
     "background_color": "red",
     "theme_color": "red",
